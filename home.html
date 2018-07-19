@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Home | Car Repair</title>
+    <!--=======Custom Style======-->
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+    function submitDetails(){
+	var mobptrn=/^[0-9]{10}$/
+	var mo=document.getElementById("mob");
+	if(!mo.value.match(mobptrn))
+		alert("Enter the mobile no. correctly");
+	else
+    		alert("Thank you for the details.\nWe will get back with repair estimates.");
+    }
+    </script>
+  </head>
+  <body>
+  <div class="row">
+  <div class="column">
+  <div class="container"><h1 font-family="Comic Sans MS" style="font-size:40pt">Car Service</h1>
+<h3>
+  <p style="margin:10px" font-family="Comic Sans MS">We cater to all car needs from:<br>
+<ul align="left" style="margin:auto 31px">
+<li> Tyre puncture</li>
+<li> Jumpstart to general service</li>
+<li> Denting</li>
+<li> Painting and</li>
+<li> Even accidental cases</li>
+</ul>
+</p>
+</h3>
+  </div>
+</div>
+</div>
+  <div class="column">
+   <form action="" name="login-form" id="login-form">
+      <div class="head">Enter the details</div>
+
+      <div class="input-field">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required/>
+        <label for="Mobile number">Mobile number:</label> 
+        <input type="text" id="mob" required/>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required/>
+	<label for="Model">Vehicle name & model:</label>
+	<input type="text" name="model" required />
+	<label for="Description">Description of repair:</label>
+	<textarea name="description" rows="4" cols="47" placeholder="Enter the description for the repair." style="border-radius:4px" required></textarea>
+	<label for="image">Image of repair area:</label>
+	<input type="file" name="img" accept="image/*" required />
+        <input type="submit" value="Submit" onclick="submitDetails()" />
+      </div>
+  </form>
+ </div>
+</body>
+</html>

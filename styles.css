@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+ 
+body {
+  background-image: url("img.jpg") ; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-opacity: 0.5;
+ }
+ 
+form#login-form {
+  border-radius: 1px;
+  box-shadow: 0 0 3px #000;
+  margin: 30px, auto;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  align-content: left;
+ }
+ 
+.head {
+  color: #FFFFFF;
+ font-size: 34px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+} 
+
+.divider{
+  background: #ddd;
+  height: 2px;
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+} 
+
+.divider span{
+  width: 30px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  top: -12px;
+  text-align: center;
+  color: #999;
+}
+
+ 
+.input-field {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+} 
+
+
+.input-field label {
+  color: #FFFFFF;
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+} 
+
+.input-field input[type="email"], .input-field input[type="text"], .input-field select, .input-field input[type="file"] {
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(223, 223, 223, 0.2);
+  margin: 6px 0;
+  padding: 12px;
+  transition: all 0.15s ease-in-out 0s;
+  width: 100%;
+} 
+
+.input-field input[type="email"]:focus, .input-field input[type="text"]:focus, .input-field select:focus, .input-field input[type="file"]:focus {
+  outline: none;
+  border: 1px solid #bdbdbd;
+} 
+
+.input-field input[type="submit"] {
+  background: #f85f64;
+  border: medium none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 5px 0;
+  outline: medium none;
+  overflow: hidden;
+  padding: 14px;
+  text-transform: uppercase;
+  transition: all 0.15s ease-in-out 0s;
+  width: 100%;
+} 
+
+.input-field input[type="submit"]:hover {
+  background: #fe7175;
+} 
+
+.text-p{
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+} 
+
+.text-p a{
+  color: #175690;
+}
+ 
+@media (max-width: 480px){
+  form#login-form {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+ 
+
+.column {
+    float: left;
+    color: #FFFFFF;
+    width: 50%;
+    padding: 10px;
+    height: 100%;  /*Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+ /*   clear: both; */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-75%) translateY(-50%);
+}
+
+.containers {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateX(-25%) translateY(-50%);
+}
